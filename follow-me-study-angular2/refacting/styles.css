@@ -1,0 +1,25 @@
+/* Master Styles */
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+body {
+    margin: 2em;
+}
+ul,li{
+    list-style: none;
+    padding:0;
+    margin: 2px 0;
+}
+.badge{
+    padding: 2px 15px;
+    background-color: #2e6da4;
+    color: #fff;
+    display: inline-block;
+}

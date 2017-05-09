@@ -10,7 +10,6 @@ import {ContactService} from 'shared/contact.service';
 export class ListComponent implements OnInit {
   contacts: {};
   private isAdd:number = 1;
-
   constructor(
     private _router: Router,
     private _contactService: ContactService

@@ -1,0 +1,7 @@
+<div class="container">
+    <label for="text" class="form-inline">
+        <!--这里的#box是input元素的本身， box.value就是元素的value值-->
+        <input id="text" #box (keyup)="onKey(box.value)" class="form-control">
+        {{values}}
+    </label>
+</div>

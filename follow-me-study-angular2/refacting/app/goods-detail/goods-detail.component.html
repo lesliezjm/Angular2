@@ -1,0 +1,7 @@
+<div>{{myname}}</div>
+<div *ngIf="goods">
+    <div><img style="width:300px;height:250px" src="app/img/{{goods.id}}.jpg" alt="{{goods.name}}"/></div>
+    <div style="text-align:center;width:300px">
+        {{goods.name}}&nbsp;&nbsp;￥{{goods.price}}
+    </div>
+</div>

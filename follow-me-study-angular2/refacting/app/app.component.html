@@ -1,0 +1,12 @@
+<h1 style="text-align:center">{{title}}</h1>
+<hr/>
+<table>
+    <tr>
+        <td>
+            <my-goods (changed)="onGoodSelected($event)"></my-goods>
+        </td>
+        <td>
+            <my-goods-detail [goods]="selectedGood"></my-goods-detail>
+        </td>
+    </tr>
+</table>

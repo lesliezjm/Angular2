@@ -1,0 +1,16 @@
+<h2>我喜欢的网站: {{ mySite }}</h2>
+<p>网站列表：</p>
+<ul>
+    <li *ngFor="let site of sites">
+        {{ site }}
+    </li>
+</ul>
+<p *ngIf="sites.length > 3">你有很多个喜欢的网站</p>
+
+<button (click)="onSave()">保存</button>
+
+<input [value]="mySite" (input)="mySite=$event.target.value" (focus)="mySite=sites[0]" >
+<!--插值 : 在 HTML 标签中显示组件值。-->
+<!--属性绑定: 把元素的属性设置为组件中属性的值。-->
+<!--事件绑定: 在组件方法名被点击时触发。-->
+<!--双向绑: 使用Angular里的NgModel指令可以更便捷的进行双向绑定。-->

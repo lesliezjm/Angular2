@@ -1,0 +1,12 @@
+<div *ngIf="selectedGood">
+    <h2>{{selectedGood.name}} </h2>
+    <div>
+        {{selectedGood.id}} &nbsp;<input [(ngModel)]="selectedGood.name" placeholder="name">
+    </div>
+</div>
+<ul class="goods">
+    <li *ngFor="let good of goods" [class.selected]="good === selectedGood"
+        (click)="onSelect(good)">
+        <span class="badge">{{good.id}}</span> &nbsp;&nbsp;{{good.name}}
+    </li>
+</ul>
