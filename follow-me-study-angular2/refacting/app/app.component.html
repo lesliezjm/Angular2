@@ -3,10 +3,10 @@
 <table>
     <tr>
         <td>
-            <my-goods (changed)="onGoodSelected($event)"></my-goods>
+            <my-goods [goods]="goodslist" (onSelected)="onGoodSelected($event)"></my-goods>
         </td>
         <td>
-            <my-goods-detail [goods]="selectedGood"></my-goods-detail>
+            <my-goods-detail [goods]="selectedGood" [myname]="'Product Description'"></my-goods-detail>
         </td>
     </tr>
 </table>
