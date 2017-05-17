@@ -3,7 +3,7 @@
  */
 import {GOODS} from './data-goods';
 import {Injectable} from '@angular/core';
-@Injectable()
+// @Injectable()
 export class GoodsService {
     getGoods() {
         return Promise.resolve(GOODS);
